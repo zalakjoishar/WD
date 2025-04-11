@@ -1,7 +1,25 @@
 .box{
-    width: 50%;
-    height: 200px;
+    width: 250px;
+    height: 400px;
     background-color: blueviolet;
     border: 2px black solid;
     border-bottom-style: dashed;
+}
+#box1{
+    text-align: left;
+    word-spacing: 40px;
+    font-size: 25px;
+}
+#box2{
+    text-align: right;
+    letter-spacing: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#box3{
+    text-align: center;
+    line-height: 40px;
+    font-weight: 900;
+}
+#box4{
+    text-align: justify;
 }
