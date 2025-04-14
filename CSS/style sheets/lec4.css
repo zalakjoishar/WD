@@ -1,0 +1,48 @@
+.box{
+    border: 2px solid ;
+}
+/* descendent selector */
+.box p{
+    background-color: plum;
+}
+/* child selctor */
+.box>p{
+    border: 2px solid black;
+}
+/* sibling selector */
+/* direct */
+.box+p{
+    background-color: blue;
+}
+/* general */
+.box~p{
+    border: 2px solid brown;
+}
+/* first letter */
+.para::first-letter{
+    color: red;
+    font-size: 50px;
+}
+/* first line */
+.para::first-line{
+    background-color: aqua;
+}
+/* first child */
+li:first-child{
+    color: red;
+}
+/* last child */
+li:last-child{
+    color: aqua;
+}
+/* nth child */
+li:nth-child(3){
+    color: blueviolet;
+}
+li:nth-child(odd){
+    background-color: burlywood;
+}
+/* hover */
+button:hover{
+    background-color: aqua;
+}
