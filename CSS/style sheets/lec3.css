@@ -29,7 +29,8 @@ span{
 .box{
     height: 100px;
     width: 100px;
-    background-color: sandybrown;
+    background-image: url(/CSS/image.jpeg);
+    background-size: cover;
     border: 2px solid rgb(169, 121, 214);
     display: inline-block;
     margin: 30px 30px 0px 0px;

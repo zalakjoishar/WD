@@ -1,0 +1,24 @@
+@media screen and (max-width:1200px) {
+    body{
+        background-color: rgb(180, 76, 39);
+    }
+    img{
+        width: 600px;
+    }
+}
+@media screen and (max-width: 800px) {
+    body{
+        background-color: rgb(253, 142, 102);
+    }
+    img{
+        width: 400px;
+    }
+}
+@media screen and (max-width:400px) {
+    body{
+        background-color: rgb(255, 221, 209);
+    }
+    img{
+        width: 200px;
+    }
+}

@@ -1,0 +1,17 @@
+#image1, #image2{
+    width: 150px;
+    float: left;
+}
+#image2{
+    border: 2px solid black;
+    clear: left;
+}
+#image3{
+    width: 150px;
+    float: right;
+}
+#image4{
+    width: 150px;
+    float: right;
+    clear: right;
+}
