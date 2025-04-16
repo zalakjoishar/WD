@@ -1,0 +1,21 @@
+.box{
+    background-color: paleturquoise;
+    height: 300px;
+    width: 300px;
+    padding: 20px;
+}
+.box p{
+    background-color: antiquewhite;
+    padding: 20px;
+    height: 260px;
+    margin: 0%;
+    overflow-x: auto;
+    text-indent: 30px;
+    text-decoration: 1px underline double black;
+}
+a{
+    text-decoration: none;
+}
+ul{
+list-style: none;
+}

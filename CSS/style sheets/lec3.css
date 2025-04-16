@@ -27,17 +27,18 @@ span{
     display: block;
 }
 .box{
-    height: 100px;
-    width: 100px;
+    height: 200px;
+    width: 200px;
     background-image: url(/CSS/image.jpeg);
     background-size: cover;
     border: 2px solid rgb(169, 121, 214);
     display: inline-block;
     margin: 30px 30px 0px 0px;
-    box-shadow: 20px 20px 10px 10px rgba(235, 119, 119, 0.748);
+    background-position: 80% 0%;
+    box-shadow: 20px 20px 10px 10px rgba(105, 81, 81, 0.748);
 }
 .contain{
-    margin-left: 425px;
+    margin-left: 200px;
 }
 #box1{
     border-radius: 10px;
