@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exotic Pets - Pet Gallery</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .card {
+      height: 100%;
+    }
+    .navbar-dark, .bg-dark {
+      background-color: #212529 !important;
+    }
+    #navbar-example2 {
+      background-color: #212529;
+    }
+    .nav-link {
+      color: white;
+    }
+    .nav-link:hover {
+      color: #adb5bd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Pets Gallery</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" />
+          <button class="btn btn-outline-light" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-2" id="navbar-example2">
+        <h3 class="text-white p-3">Types of Pets</h3>
+        <nav class="nav flex-column">
+          <a class="nav-link" href="mammals.html">Mammals</a>
+          <a class="nav-link" href="birds.html">Birds</a>
+          <a class="nav-link" href="fish.html">Fish</a>
+          <a class="nav-link" href="reptiles.html">Reptiles</a>
+          <a class="nav-link active" aria-current="page" href="#">Exotic Pets</a>
+        </nav>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-md-10">
+        <div class="container py-4">
+          <h2 class="mb-4">Exotic Pets</h2>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://source.unsplash.com/300x200/?chinchilla" class="card-img-top" alt="Chinchilla">
+                <div class="card-body">
+                  <h5 class="card-title">Chinchilla</h5>
+                  <p class="card-text">Soft, furry rodents known for their playful nature and dense fur.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://source.unsplash.com/300x200/?sugar-glider" class="card-img-top" alt="Sugar Glider">
+                <div class="card-body">
+                  <h5 class="card-title">Sugar Glider</h5>
+                  <p class="card-text">Tiny marsupials that can glide through the air, requiring special care.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://source.unsplash.com/300x200/?tarantula" class="card-img-top" alt="Tarantula">
+                <div class="card-body">
+                  <h5 class="card-title">Tarantula</h5>
+                  <p class="card-text">Large, hairy spiders kept by enthusiasts for their unique appearance.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="https://source.unsplash.com/300x200/?hermit-crab" class="card-img-top" alt="Hermit Crab">
+                <div class="card-body">
+                  <h5 class="card-title">Hermit Crab</h5>
+                  <p class="card-text">Small crabs that use shells for protection and are popular beginner pets.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    &copy; 2025 Pet Gallery. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

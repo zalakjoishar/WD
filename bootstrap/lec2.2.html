@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+      .footer-navbar {
+        display: flex;
+        justify-content: space-between; /* Or use `center`, `start`, etc. as needed */
+        flex-wrap: wrap; /* Optional: wrap items on smaller screens */
+        gap: 2rem; /* Optional: space between columns */
+      }
+      .footer-navbar-col {
+        flex: 1; /* Optional: make them evenly spaced */
+        min-width: 150px; /* Optional: prevents columns from shrinking too much */
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark " style="box-shadow: 2px 2px rgb(243, 7, 7);">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="../CSS/img1.jpeg" alt="error" width="30" height="30" class="d-inline-block align-text-top">DOGS</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item pt-2">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle pt-3" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <a class="nav-link active pt-3" aria-current="page" href="#">contact us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">
+                <button type="button" class="btn pb-1 pt-2 btn-dark position-relative">
+                  about
+                  <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+                    <span class="visually-hidden">New alerts</span>
+                  </span>
+                </button>
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+    <!-- content -->
+    <div class="container-fluid" style="box-shadow: 2px 2px 2px black;">
+      <div class="row">
+        <div class="col-2 mt-2 m-0" style="margin: -10px;">
+          <nav id="navbar-example2" class="navbar navbar-light bg-dark text-white px-3">
+            <h3>Type of dogs</h3>
+          </nav>
+          <nav class="nav nav-pills flex-column bg-dark">
+            <a class="nav-link" href="#i1">bulldog</a>
+            <a class="nav-link" href="#i2">husky</a>
+            <a class="nav-link" href="#i3">vizsla</a>
+            <a class="nav-link" href="#i4">Golden retriver</a>
+            <a class="nav-link" href="#i5">labrador retriver</a>
+            <a class="nav-link" href="#i6">shih Tzu</a>
+            <a class="nav-link" href="#i1">boxer</a>
+            <a class="nav-link" href="#i2">collie</a>
+            <a class="nav-link" href="#i3">poodle</a>
+            <a class="nav-link" href="#i4">GreyHound</a>
+            <a class="nav-link" href="#i5">beagle</a>
+            <a class="nav-link" href="#i6">Terriers</a>
+            <a class="nav-link" href="#i1">Pomeranian</a>
+            <a class="nav-link" href="#i2">Chihuahua</a>
+            <a class="nav-link" href="#i3">Australian Shepherd</a>
+            <a class="nav-link" href="#i4">Border Collie</a>
+            <a class="nav-link" href="#i5">Rottweiler</a>
+            <a class="nav-link" href="#i6">Doberman Pinscher</a>
+            <a class="nav-link" href="#i1">Cocker Spaniel</a>
+            <a class="nav-link" href="#i2">Yorkshire Terrier</a>
+            <a class="nav-link" href="#i3">Dachshund</a>
+          </nav>
+        </div>
+        <div class="col-10 mt-2">
+          <div class="row row-cols-1 row-cols-md-3 g-3">
+            <div class="col">
+              <div class="card shadow-lg bg-body rounded" id="i1" >
+                <img src="../CSS/img1.jpeg" class="card-img-top" style="width: 355px; height: 340px;" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Best gift to humanity</h5>
+                  <p class="card-text">Loyal, playful, protective, friendly, intelligent, loving, active, social, obedient, curious</p>
+                </div>
+              </div>
+            </div>
+              <div class="col">
+                <div class="card shadow-lg bg-body rounded" id="i2">
+                  <img src="../CSS/img2.jpeg" class="card-img-top" style="width: 355px; height: 340px;" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Best gift to humanity</h5>
+                    <p class="card-text">Loyal, playful, protective, friendly, intelligent, loving, active, social, obedient, curious</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-lg bg-body rounded" id="i3">
+                  <img src="../CSS/img3.jpeg" class="card-img-top" style="width: 355px; height: 340px;" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Best gift to humanity</h5>
+                    <p class="card-text">Loyal, playful, protective, friendly, intelligent, loving, active, social, obedient, curious</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-lg bg-body rounded" id="i4">
+                  <img src="../CSS/img4.jpeg" class="card-img-top" style="width: 355px; height: 340px;" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Best gift to humanity</h5>
+                    <p class="card-text">Loyal, playful, protective, friendly, intelligent, loving, active, social, obedient, curious</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-lg bg-body rounded" id="i5">
+                  <img src="../CSS/img5.jpeg" class="card-img-top" style="width: 355px; height: 340px;" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Best gift to humanity</h5>
+                    <p class="card-text">Loyal, playful, protective, friendly, intelligent, loving, active, social, obedient, curious</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card shadow-lg bg-body rounded" id="i6">
+                  <img src="../CSS/img6.jpeg" class="card-img-top" style="width: 355px; height: 340px;" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Best gift to humanity</h5>
+                    <p class="card-text">Loyal, playful, protective, friendly, intelligent, loving, active, social, obedient, curious</p>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+      
+    <div class="footer-navbar mt-2 p-5 bg-dark text-white">
+      <div class="footer-navbar-col">
+          <h5>Solutions</h5>
+          <ul>
+            <li><a href="#" class="text-white" style="text-decoration: none;"> Marketing </a></li>
+            <li><a href="#" class="text-white"> Analyst </a></li>
+            <li><a href="#" class="text-white"> Insight </a></li>
+            <li><a href="#" class="text-white"> Commerce </a></li>
+          </ul>
+      </div>
+      <div class="footer-navbar-col">
+        <h5>Support</h5>
+        <ul>
+          <li><a href="#" class="text-white"> Insight </a></li>
+          <li><a href="#" class="text-white"> Analyst </a></li>
+          <li><a href="#" class="text-white"> Marketing </a></li>
+          <li><a href="#" class="text-white"> Commerce </a></li>
+        </ul>
+      </div>
+      <div class="footer-navbar-col">
+        <h5>Company</h5>
+        <ul>
+          <li><a href="#" class="text-white"> Analyst </a></li>
+          <li><a href="#" class="text-white"> Commerce </a></li>
+          <li><a href="#" class="text-white"> Marketing </a></li>
+          <li><a href="#" class="text-white"> Insight </a></li>
+        </ul>
+      </div>
+      <div class="footer-navbar-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#" class="text-white"> Commerce </a></li>
+          <li><a href="#" class="text-white"> Analyst </a></li>
+          <li><a href="#" class="text-white"> Insight </a></li>
+          <li><a href="#" class="text-white"> Marketing </a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Footer End-->
+  
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
