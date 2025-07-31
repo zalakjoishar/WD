@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trainer Dashboard - Dance Studio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+    }
+    .sidebar {
+      width: 250px;
+      height: 100vh;
+      background-color: #343a40;
+    }
+    .sidebar .nav-link {
+      color: #ffffff;
+    }
+    .sidebar .nav-link:hover {
+      background-color: #495057;
+    }
+    .content {
+      flex-grow: 1;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Sidebar -->
+  <nav class="sidebar d-flex flex-column p-3 text-white">
+    <h4 class="text-white mb-4">Trainer Panel</h4>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item"><a href="#dashboard" class="nav-link active">Dashboard</a></li>
+      <li><a href="#selectBatch" class="nav-link">Select Batch</a></li>
+      <li><a href="#calendar" class="nav-link">Batch Calendar</a></li>
+      <li><a href="#assignBatch" class="nav-link">Assign Batch</a></li>
+      <li><a href="#sendMessage" class="nav-link">Send Message</a></li>
+      <li><a href="#studentDetails" class="nav-link">Student Details</a></li>
+      <li><a href="#events" class="nav-link">Upcoming Events</a></li>
+      <Li><a href="#login" class="nav-link">login</a></Li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="content">
+    <!-- Dashboard -->
+    <div id="dashboard">
+      <h2>Dashboard</h2>
+      <p>Welcome Trainer! Here’s a quick summary of your schedule.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card text-bg-primary mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Today’s Batches</h5>
+              <p class="card-text">2 batches scheduled</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card text-bg-success mb-3">
+            <div class="card-body">
+              <h5 class="card-title">Upcoming Events</h5>
+              <p class="card-text">1 event next week</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Select Batch -->
+    <div id="selectBatch" class="mt-5">
+      <h2>Select Batch</h2>
+      <select class="form-select mt-3">
+        <option>Select a Batch</option>
+        <option>Batch A (Mon-Wed 5PM)</option>
+        <option>Batch B (Sat-Sun 4PM)</option>
+      </select>
+    </div>
+
+    <!-- Calendar -->
+    <div id="calendar" class="mt-5">
+      <h2>Batch Calendar</h2>
+      <p>View your batch schedule by week.</p>
+      <div class="alert alert-info">Calendar UI can be integrated here</div>
+    </div>
+
+    <!-- Assign Batch -->
+    <div id="assignBatch" class="mt-5">
+      <h2>Assign Batch to Other Trainer</h2>
+      <form class="mt-3">
+        <div class="mb-3">
+          <label class="form-label">Select Trainer</label>
+          <select class="form-select">
+            <option>Trainer A</option>
+            <option>Trainer B</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Leave Dates</label>
+          <input type="date" class="form-control" />
+        </div>
+        <button class="btn btn-primary">Assign</button>
+      </form>
+    </div>
+
+    <!-- Send Message -->
+    <div id="sendMessage" class="mt-5">
+      <h2>Send Message to Students</h2>
+      <form>
+        <div class="mb-3">
+          <label class="form-label">Choose Batch</label>
+          <select class="form-select">
+            <option>Batch A</option>
+            <option>Batch B</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Message</label>
+          <textarea class="form-control" rows="4" placeholder="Enter message here..."></textarea>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Mode</label><br />
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="mode" value="whatsapp" />
+            <label class="form-check-label">WhatsApp</label>
+          </div>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="mode" value="email" />
+            <label class="form-check-label">Email</label>
+          </div>
+        </div>
+        <button class="btn btn-success">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Student Details -->
+    <div id="studentDetails" class="mt-5">
+      <nav class="navbar">
+        <div class="container-fluid p-0">
+          <h2 style="display: inline-block;">Student Details</h2>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <h2 style="display: inline-block;">Student Details</h2>
+      <nav class="navbar" style="display: inline-block;">
+        <div class="container-fluid">
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search Student" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+      <table class="table table-bordered mt-3">
+        <thead class="table-light">
+          <tr>
+            <th>Name</th>
+            <th>Contact</th>
+            <th>Attendance</th>
+            <th>Fee Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Riya Mehta</td>
+            <td>9876543210</td>
+            <td>90%</td>
+            <td>Paid</td>
+          </tr>
+          <tr>
+            <td>Jay Shah</td>
+            <td>9765432101</td>
+            <td>85%</td>
+            <td>Pending</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- Upcoming Events -->
+    <div id="events" class="mt-5">
+      <h2>Upcoming Events</h2>
+      <div class="card mt-3">
+        <div class="card-body">
+          <h5 class="card-title">Annual Showcase</h5>
+          <p class="card-text">Date: 25 July<br />Venue: Main Hall<br />Details: Dance performance and stage rehearsal</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Login Page -->
+    <!-- <div id="loginPage" class="container d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+      <div class="card p-4" style="width: 350px;">
+        <h3 class="mb-3 text-center">Trainer Login</h3>
+        <form onsubmit="login(event)">
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" id="email" class="form-control" required />
+          </div>
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" id="password" class="form-control" required />
+          </div>
+          <button class="btn btn-primary w-100">Login</button>
+        </form>
+      </div>
+    </div> -->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
