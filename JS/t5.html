@@ -29,10 +29,45 @@
         
         <hr>
 
-        <h1 class="bg-waning text-center p-3" id="Heading"></h1>
-        <button type="button" class="btn btn-primary">Add text</button>
+        <h1 class="bg-warning text-center p-3" id="Heading"></h1>
+        <button type="button" class="btn btn-primary" onclick="addText('Good Morning')">Add text</button>
+        <button type="button" class="btn btn-danger" onclick="addText('')">Remove text</button>
 
         <hr>
+
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <input type="text" id="fruit">
+                    <button class="btn btn-primary" onclick="addFruit()"> Add</button>
+                </div>
+                <div class="col">
+                    <ul class="list-group">
+                        <li class="list-group-item">Mango</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <hr>
+        
+        <input type="number" id="num1">
+        <input type="number" id="num2">
+
+        <h1 class="bg-warning text-center">Answer is <span id="answer">_______</span></h1>
+
+        <button type="button" class="btn btn-primary" onclick="add()">Add</button>
+
+        <hr>
+
+        <img src="../HTML/image/image.png" height="200px" id="img" alt="">
+        <button
+            type="button"
+            class="btn btn-primary"
+            onclick="changeImage()"
+        >
+            change Image
+        </button>
 
         <script src="t15.js"></script>
 
