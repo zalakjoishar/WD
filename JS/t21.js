@@ -1,0 +1,1 @@
+fetch("https://dummyjson.com/posts").then((response)=>response.json()).then((data)=>data["posts"].forEach((el)=>console.log(el.id,el.tags)))

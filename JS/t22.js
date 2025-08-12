@@ -1,0 +1,1 @@
+fetch("http://localhost:8080/product").then((responce)=>responce.json()).then((data)=>console.log(data))

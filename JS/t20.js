@@ -1,0 +1,1 @@
+fetch("https://dummyjson.com/todos").then((responce)=>responce.json()).then((data)=>data["todos"].forEach((element) =>console.log(element.id,element.todos)))
